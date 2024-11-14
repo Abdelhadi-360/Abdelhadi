@@ -1,0 +1,268 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/*Start Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px #bebebe;
+}
+
+header a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #4b57ff;
+    transition: 0.4s;
+}
+
+header a:hover {
+    text-shadow: 0 5px 20px;
+}
+/*End Header*/
+
+
+/*Start Main Section*/
+section {
+    padding: 100px 75px;
+}
+
+section h4 {
+    color: #4b57ff;
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+
+.main {
+    padding: 200px 75px;
+    display: flex;
+    flex-direction: column;
+    background: url(assets/code.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.main h2 {
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+
+.main h1 {
+    color: #4b57ff;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.main-btn {
+    width: 190px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4b57ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.main-btn:hover {
+    transform: scale(1.1);
+}
+
+.main-btn:active {
+    background-color: #2e3cfd;
+}
+/*End Main Section*/
+
+
+/*Start Skills Section*/
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+}
+
+.container {
+    display: flex;
+    gap: 35px 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+    transition: 0.5s;
+    justify-content: center;
+    width: 220px;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.cards i {
+    font-size: 3.125em;
+    padding-bottom: 15px;
+    color: #4b57ff;
+}
+
+.cards h1 {
+    font-size: 1.5625em;
+    padding-bottom: 15px;
+    color: #4b57ff;
+}
+
+.cards p {
+    font-weight: 700;
+}
+/*End Skills Section*/
+
+
+/*Start About Section*/
+.about p {
+    font-weight: 600;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+/*End About Section*/
+
+
+/*Start Contact Section*/
+.contact .cards {
+    width: 220px;
+    height: 200px;
+    padding: 0;
+}
+/*End Contact Section*/
+
+/*Start Footer*/
+footer {
+    display: flex;
+    background-color: #1a1919;
+    padding: 20px;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1.0625em;
+}
+/*End Footer*/
+
+/* Start Media Quiries*/
+
+@media (max-width: 545px) {
+    body {
+        font-size: 13px;
+    }
+
+    .main-btn {
+        width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    header a {
+        font-size: 1em;
+        padding: 0;
+        margin: 5px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .logo {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    header a {
+        font-size: 16px;
+        padding: 0;
+        margin: 5px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    header {
+        padding: 10px 25px;
+    }
+
+    .main h2 {
+        font-size: 13px;
+    }
+
+    header a {
+        font-size: 16px;
+        padding: 0;
+        margin: 5px;
+    }
+
+    nav {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 1.7em;
+    }
+
+    .skills p {
+        font-size: 16px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+    .contact .cards {
+        height: 150px;
+        width: 190px;
+    }
+
+    .contact .cards p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 372px) {
+    .logo {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 362px) {
+    header a {
+        font-size: 17px;
+        padding: 0;
+        margin: 5px;
+    }
+
+}
+
+/* End Media Quiries*/
