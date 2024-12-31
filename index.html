@@ -3,84 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Abdelhadi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="icon" type="png" href="assets/logo.png">
 </head>
 <body>
-    
     <header>
-        <h1><a href="#home" class="logo">Abdelhadi</a></h1>
-        <nav>
+        <a href="#">
+            <img src="assets/logo.svg" alt="logo">
+        </a>
+        <nav class="hideOnMobile">
             <a href="#home">Home</a>
             <a href="#skills">Skills</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#about">Services</a>
+            <a href="#connect">Contact</a>
         </nav>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" onclick=showSideBar() ></i>
+        </div>
     </header>
+    <div class="side">
+        <nav class="sidebar">
+            <div class="x" onclick=hideSideBar()>
+                <i class="fa-solid fa-square-xmark"></i>
+            </div>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">Services</a>
+            <a href="#connect">Contact</a>
+        </nav>
+    </div>
+    
 
-    <!-- Main Setion -->
-     <section class="main" id="home">
-        <h2>Hello, I'm Abdelhadi</h2>
-        <h1>Front-end Developer</h1>
-        <a href="#about" class="main-btn">View More About Me</a>
-     </section>
-    <!-- End Main Section -->
+    <section class="main" id="home">
+        <h5>Hello, I'm</h5>
+        <h4>Abdelhadi!</h4> <br>
+        <h2>Join with me to the digital world.</h2>
+    </section>
 
-    <!--Start Skills-->
     <section class="skills" id="skills">
-        <h4>My Skills</h4>
+        <h2 class="titles">My skills</h2>
         <div class="container">
-            <div class="cards"><i class="fa-solid fa-scroll"></i>
+            <div class="cards">
+                <i class="fa-solid fa-scroll"></i>
                 <h1>Writing & Scripting</h1>
                 <p>I create clean, responsive web interfaces using HTML for structure, CSS for style, and JavaScript for interactivity. My focus is on building user-friendly, accessible designs that balance form and function.</p>
             </div>
-            <div class="cards"><i class="fa-solid fa-window-maximize"></i>
+            <div class="cards">
+                <i class="fa-solid fa-window-maximize"></i>
                 <h1>Websites Development</h1>
                 <p>I develop responsive websites that balance functionality and design. With HTML, CSS, and JavaScript, I create polished, user-friendly experiences optimized for any device.</p>
             </div>
-            <div class="cards"><i class="fa-solid fa-computer"></i>
+            <div class="cards">
+                <i class="fa-solid fa-computer"></i>
                 <h1>Desktop Apps Development</h1>
                 <p>I create cross-platform desktop applications using Electron.js and Tauri.js. My focus is on building efficient, native-like experiences with a smooth interface and optimized performance.</p>
             </div>
-            <div class="cards"><i class="fa-solid fa-mobile-screen"></i>
+            <div class="cards">
+                <i class="fa-solid fa-mobile-screen"></i>
                 <h1>Mobile Apps Development</h1>
                 <p>I develop cross-platform mobile apps with Apache Cordova, focusing on responsive design and smooth functionality to provide a seamless experience on both Android and iOS devices.</p>
             </div>
         </div>
     </section>
-    <!-- End Skills -->
 
-    <!-- Start About Section -->
     <section class="about" id="about">
-        <h4>About Me</h4>
-       <p>Hello! I’m Abdelhadi, a 15-year-old developer from Algeria with a passion for crafting dynamic applications across web, desktop, and mobile platforms. I have hands-on experience in HTML, CSS, and JavaScript, allowing me to bring websites to life with functional, visually engaging designs. Recently, I've expanded my skills to include Svelte, a modern JavaScript framework that enhances my ability to build interactive and responsive user interfaces. <br> <br>
-          I’m also skilled in desktop application development using Electron.js and Tauri.js, two frameworks that enable me to create powerful, cross-platform apps. On the mobile front, I work with Apache Cordova to build versatile apps that can reach users on multiple devices. I’m always eager to learn new tools and refine my techniques, driven by my commitment to delivering high-quality, user-friendly experiences.
-       </p>
+        <h2 class="titles">About Me</h2>
+        <p>I’m Abdelhadi, a 15-year-old developer from Algeria with a passion for crafting
+            dynamic applications across web, desktop, and mobile platforms. I have hands-on
+            experience in HTML, CSS, and JavaScript, allowing me to bring websites to life
+            with functional, visually engaging designs. Recently, I've expanded my skills
+            to include Svelte, a modern JavaScript framework that enhances my ability to
+            build interactive and responsive user interfaces. <br> <br>
+        
+            I’m also skilled in desktop application development using Electron.js and Tauri.js,
+            two frameworks that enable me to create powerful, cross-platform apps. On the mobile 
+            front, I work with React Native to build versatile apps that can reach users on 
+            multiple devices. I’m always eager to learn new tools and refine my techniques, 
+            driven by my commitment to delivering high-quality, user-friendly experiences.
+        </p>
     </section>
-    <!-- End About Section -->
 
-    <!-- Start Contact Section -->
-    <section class="contact" id="contact">
-        <h4>Stay Connect</h4>
-        <div class="container">
-            <div class="cards"><i class="fa-solid fa-phone"></i>
-                <h1>Phone</h1>
-                <p>+213547839028</p>
-            </div>
-            <div class="cards"><i class="fa-solid fa-envelope"></i>
-                <h1>E-mail</h1>
-                <p>abdelhadi123@gmail.com</p>
-            </div>
+    <section class="connect" id="connect">
+        <h2 class="titles">Stay Connect!</h2>
+        <div class="container2">
+
+            <p>Got a project or idea? Let’s make it happen! Follow me on my official accounts
+               for updates, or Contact Me to collaborate.
+            </p>
+            <nav>
+                <a href="https://www.facebook.com/profile.php?id=100088047371504" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@Abdelhadi-C" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/abd_el_hadi_360/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Abdelhadi-360" class="github"><i class="fa-brands fa-github"></i></a>
+            </nav>
+            <p>Or contact with E-mail</p>
+            <a href="mailto:computerhome11209@gmail.com" class="mail"><i class="fa-regular fa-envelope"></i></a>
         </div>
     </section>
-    <!-- End Contact Section -->
 
-    <!-- Start Footer -->
     <footer>
-        <p>Abdelhadi 2024 All Rights Reserved</p>
+        <a href="#home"><img src="assets/logo.svg" alt="logo"></a>
+        <p>Abdelhadi Company 2025 &middot; All Right Reserved</p>
     </footer>
-    <!-- End Footer -->
 
+    <script src="script.js"></script>
 </body>
 </html>
