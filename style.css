@@ -253,6 +253,9 @@ footer p {
     .hamburger {
         display: block;
     }
+    .skills .container .cards {
+        height: 550px;
+    }
 }
 
 @media(max-width: 500px) {
@@ -260,6 +263,6 @@ footer p {
         width: 100%;
     }
     .skills .container .cards {
-        height: 450px;
+        height: 500px;
     }
 }
