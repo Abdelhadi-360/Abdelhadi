@@ -260,6 +260,6 @@ footer p {
         width: 100%;
     }
     .skills .container .cards {
-        padding: 20px 10px;
+        height: 420px;
     }
 }
