@@ -13,6 +13,9 @@ body {
     background: linear-gradient(-40deg, #0a0a42, #5353f7, darkblue) ;
 
 }
+body a {
+    -webkit-tap-highlight-color: transparent;
+}
 
 header {
     display: flex;
@@ -266,3 +269,4 @@ footer p {
         height: 500px;
     }
 }
+
